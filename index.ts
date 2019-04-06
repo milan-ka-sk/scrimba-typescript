@@ -1,10 +1,7 @@
+import { Person } from './person.interface';
 
-// custom type: a bit deprecated, better to use interfaces
-type person = {firstName: string};
+const example1: Person = {firstName: 'Dollan', middleName: 'Dollan', lastName: 'Dollan'};
 
-const example1: object = {};
-//example1.firstName = 'Dylan'; // error
-
-const example3: person = {firstName: 'Dollan'};
-
-example3.firstName = 'Dylan';
+example1.firstName = 'Dylan';
+example1.middleName = 'Coding God';
+example1.lastName = 'Israel';
