@@ -1,11 +1,7 @@
-let definetlyNotAString: any = 'I am a string';
+const example1: string[] = ['Hello World'];
 
-//let strLength = definetlyNotAString.length; // might not work coy it is any
+const example2: (number | boolean)[] = [1, 2, true];
 
-// cast type
+const example3: boolean[] = [true, false];
 
-// var 1
-// let strLength = (definetlyNotAString as string).length;
-
-// var 2
-let strLength = (<string> definetlyNotAString).length;
+const example4: boolean[][] = [ [true, false], [true, true] ] ;
