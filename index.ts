@@ -1,5 +1,7 @@
-let example1: boolean | number = 35; // or
+import { Bear } from './bear.model'; 
 
-let example2: number = 35;
+const bear = new Bear(3);
 
-let example3: string = 'Hello world';
+if (bear instanceof Bear) {
+    console.log("Hello from TypeScript");
+}
