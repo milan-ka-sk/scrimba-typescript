@@ -1,17 +1,10 @@
-import { Person } from './person.model';
 
-function add(val1: number, val2: number): number {
-    return val1 + val2;
-}
+// custom type: a bit deprecated, better to use interfaces
+type person = {firstName: string};
 
-function sayHello(person: Person): string {
-    return `Say Hello to My Little Friend, ${person.firstName}!`    
-}
+const example1: object = {};
+//example1.firstName = 'Dylan'; // error
 
-function voidExample(): void {
-    add(1,2);
-}
+const example3: person = {firstName: 'Dollan'};
 
-function neverExample(): never {
-    throw Error;
-}
+example3.firstName = 'Dylan';
