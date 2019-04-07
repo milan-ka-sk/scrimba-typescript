@@ -1,10 +1,8 @@
-import { Person } from './person.model';
+// if we dont know what type of argument will be passed
 
-const example1: Person = new Person({firstName: 'Dollan'});
+function example<T>(arg: T[]): T {
+    
+    return arg[0];
+}
 
-example1.firstName = 'Dylan';
-example1.middleName = 'Coding God';
-example1.lastName = 'Israel';
-
-// typescript class vs interface
-// https://ultimatecourses.com/blog/classes-vs-interfaces-in-typescript
+example([5]);
